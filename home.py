@@ -1,9 +1,9 @@
 import os
+import onnx
 import io
 from datetime import datetime
 
 import numpy as np
-import onnx
 import onnxruntime as ort
 import streamlit as st
 import torch
@@ -464,3 +464,4 @@ if uploaded_file is not None:
         st.error(f"Prediction error: {e}")
 else:
     st.info("Upload a medical image to get diagnosis, risk indicator, and confidence score.")
+
